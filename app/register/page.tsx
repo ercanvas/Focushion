@@ -24,7 +24,7 @@ function RegisterPageBase() {
   const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    const BACKEND_IP = '833a-2a00-1d36-9304-6b00-bd26-18c2-127c-bb3a.ngrok-free.app';
+    const BACKEND_IP = 'focushion-backend.onrender';
     try {
       const response = await fetch(`https://${BACKEND_IP}/api/register`, {
         method: 'POST',
