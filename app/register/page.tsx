@@ -24,7 +24,7 @@ function RegisterPageBase() {
   const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    const BACKEND_IP = 'focushion-backend.onrender';
+    const BACKEND_IP = 'focushion-backend.onrender.com';
     try {
       const response = await fetch(`https://${BACKEND_IP}/api/register`, {
         method: 'POST',

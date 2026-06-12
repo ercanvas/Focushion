@@ -27,7 +27,7 @@ function LoginPageBase() {
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    const BACKEND_IP = 'focushion-backend.onrender';
+    const BACKEND_IP = 'focushion-backend.onrender.com';
     try {
       const response = await fetch(`https://${BACKEND_IP}/api/login`, {
         method: 'POST',
